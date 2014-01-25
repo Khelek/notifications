@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#clients, #orders
+  margin-left: 0
+  position: relative
+  height: 100%
+  .row-fluid
+    min-height: 90px
+    height: 15%
+    margin-top: 0
+    border-bottom: 2px solid grey
+  .alert
+    margin: 10px 10px 0 10px
+    &.client:hover
+      background-color: #8EB2B9
+    &.order:hover
+      background-color: #93A882
+    input[type="checkbox"]
+      margin-bottom: 7px
+
+#clients
+  background-color: #d9edf7
+  
+#orders
+  background-color: #dff0d8
+      
+.orders, .clients
+  background-color: #fff
+  position: relative
+  overflow: scroll
+  min-height: 300px
+  height: 75%
+  
+.footer
+  text-align: center
+  padding-top: 7px
+  position: absolute
+  bottom: 0
+  height: 7%
+  min-height: 35px
+  width: 100%
+  input[type="text"]
+    width: 60%
+
+.tabbable
+  border: 1px solid #ddd
+  border-width: 0 0 1px 0
+  &>.row-fluid
+    border: 1px solid #ddd
+    border-width: 0 1px
+  .tab-content
+    border: 1px solid #ddd
+    border-width: 0 1px
+    margin-bottom: 20px
+    .btn-group > .state-button
+      margin-left: 10px
+      padding-right: 0
+      .inline-label
+        border-left: 1px solid #ddd
+        padding: 8px
+        display: inline
+      input[type="checkbox"]
+        margin-bottom: 6px
+    .input
+      margin-top: 20px
+      textarea
+        width: 100%
+  .accordion
+    .badges
+      text-align: left
+      float: left
+      padding-top: 5px
+    .badge
+      margin-left: 15px
+      font-size: 16px
+      line-height: 20px
+      cursor: pointer
+    .accordion-inner
+      text-align: left
+      .badge
+        border-bottom-right-radius: 0
+        border-top-right-radius: 0
+        line-height: 26px
+    .accordion-heading
+      text-align: right
+  .action-buttons
+    margin-top: 20px
+    text-align: right
+      
+          
+.big-text
+  font: bold 20px sans-serif
+
+.input-append input[type="text"]
+  height: 30px
+
+.noselect
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none

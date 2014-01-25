@@ -1,0 +1,60 @@
+.tabbable
+  %ul.nav.nav-tabs
+    %li.active
+      %a{href: "#sms", data: {toggle: "tab"}}
+        SMS
+    %li
+      %a{href: "#email", data: {toggle: "tab"}}
+        E-Mail
+    %li
+      %a{href: "#all", data: {toggle: "tab"}}
+        All
+  .tab-content
+    #sms.tab-pane.active
+      =render "state_buttons"
+      .row-fluid.input
+        .span10.offset1
+          %textarea{rows: "6"}
+        %span.symbols-rest
+          234
+    #email.tab-pane
+      =render "state_buttons"
+      email
+    #all.tab-pane
+      =render "state_buttons"
+      all
+  .row-fluid
+    .accordion#accordion2.span10.offset1
+      .accordion-group
+        .badges.span10
+          %span.badge.noselect.badge-info
+            Code
+          %span.badge.noselect.badge-success
+            E-Mail
+          %span.badge.noselect.badge-warning
+            Time
+        .accordion-heading
+          %a.accordion-toggle{href: "#coll", data: {toggle: "collapse", parent: "#accordion2"}}
+            Show
+        #coll.accordion-body.collapse
+          .accordion-inner
+            .input-prepend.input-append
+              %span.badge.badge-info
+                Code
+              %span.add-on
+                q34toiashntoiahs
+            .input-prepend.input-append
+              %span.badge.badge-success
+                E-mail
+              %span.add-on
+                sahtasht@asht.ru
+            .input-prepend.input-append
+              %span.badge.badge-warning
+                Time
+              %span.add-on
+                10 day of summer
+      .action-buttons
+        %a.action-button.btn.btn-primary.btn-large
+          Save
+        %a.action-button.btn
+          Abort

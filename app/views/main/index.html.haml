@@ -1,2 +1,104 @@
-%h1 Main#index
-%p Find me in app/views/main/index.html.haml
+.row-fluid
+  .span2#clients
+    .row-fluid
+      .offset2
+        %h1     
+          Clients
+        .header
+          %label.checkbox
+            %input{ type: "checkbox", value: "all clients" }
+              For all
+    .clients
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+      %label.client.alert.alert-info
+        %input{ type: "checkbox", value: "id-client" }
+          Client  name
+    .footer
+      .input-append.span12
+        %input{type: "text"}
+        %button.btn{type: "button"} New
+  .span2#orders
+    .row-fluid
+      .offset2
+        %h1
+          Orders
+        .header
+          %label.checkbox
+            %input{ type: "checkbox", value: "all orders" }
+              For all
+    .orders
+      %label.order.alert.alert-success
+        %input{ type: "checkbox", value: "id-order" }
+          Order  name
+    .footer
+      .input-append.span12
+        %input{type: "text"}
+        %button.btn{type: "button"} New
+  .span8#message.text-center
+    %h1
+      Message
+    .container-fluid
+      .text-left
+        %div
+          %span.big-text
+            Order state:
+          .input-append
+            %select.select.states
+              %option.current-state{ selected: "selected"}
+                State
+              %option
+                Delivered
+              %option
+                Packing
+            %button.btn.change-state
+              Change
+        %div
+          %span.big-text
+            Delivery time:
+          .input-append
+            %input.delivery-time{type: "text", placeholder: "Delivery time"}
+            %button.btn.change-delivery-time
+              Change
+      .container-fluid
+        =render "form" 
